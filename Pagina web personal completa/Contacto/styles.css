@@ -1,0 +1,64 @@
+/* Configuración general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #697565;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Contenedor principal */
+.contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Títulos */
+h1 {
+    color: #1E201E;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #555;
+    margin-top: 20px;
+}
+
+/* Información de contacto */
+.contact-info p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.contact-info a {
+    color: #1E201E;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Enlaces sociales */
+.social-links a {
+    display: inline-block;
+    margin: 10px 15px;
+    color: #ffffff;
+    background-color: #3C3D37;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #1E201E;
+}
+

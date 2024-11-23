@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript"
+        src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+</head>
+<body>
+
+
+    
+    <main class="contenedor">
+        <div class="grid">
+        <section class="inputs">
+            <h2 class="head-2">Ejemplo de gráficas de funciones</h2>
+            <div class="var-entradas">
+                <fieldset>
+                    <legend>
+                        Círculo
+                    </legend>
+                    <div class="datos">
+
+                        <div class="dato">
+                            <label for="">$Radio:$</label>
+                            <input placeholder="cm" class = "input-data" type="number" name="" id="radio">
+                        </div>  
+                        <div class="dato">
+                            <label for="">$Área:$</label>
+                            <input style="background-color: white;" disabled placeholder="cm^2" class = "input-data" type="text" name="" id="area">
+                        </div>  
+
+                    </div>
+                </fieldset>
+            </div>
+        </section>
+ 
+        <div class="boton-alinear">
+            <a onclick="graficarCirculo()" class="boton">Generar gráfica</a>
+        </div> 
+        
+        <section class="plot">
+            <div id="chart_div" style="width: 800px; height:800px"></div>
+        </section>
+
+        <section class="inputs">
+            <h2 class="head-2">Ejemplo de gráficas de funciones</h2>
+            <div class="var-entradas">
+                <fieldset>
+                    <legend>
+                        Polinomio
+                    </legend>
+                    <div class="datos">
+
+                        <div class="dato">
+                            <label for="">Escribe el grado para el primer término del siguiente polinomio: 2x<sup>${grado}</sup> + 3x<sup>2</sup>+5x+10</label>
+                            <input placeholder="grado" class = "input-data" type="number" name="" id="grado">
+                        </div>  
+                        <div class="dato">
+                            <label for="">Polinomio a graficar:</label>
+                            <input style="background-color: white;" disabled placeholder="" class = "input-data" type="text" name="" id="y">
+                        </div>  
+
+                    </div>
+                </fieldset>
+            </div>
+        </section>
+ 
+        <div class="boton-alinear">
+            <a onclick="graficarPolinomio()" class="boton">Generar gráfica</a>
+        </div> 
+        
+        <section class="plot">
+            <div id="chart_div2" style="width: 800px; height:800px"></div>
+        </section>
+
+        <section class="inputs">
+            <h2 class="head-2">Ejemplo de gráficas de funciones</h2>
+            <div class="var-entradas">
+                <fieldset>
+                    <legend>
+                        Función seno
+                    </legend>
+                    <div class="datos">
+
+                        <div class="dato">
+                            <label for="">Escribe el número por el que se multiplicará la siguiente función: sen(x)</label>
+                            <input placeholder="num" class = "input-data" type="number" name="" id="num">
+                        </div>  
+                        <div class="dato">
+                            <label for="">Función a graficar:</label>
+                            <input style="background-color: white;" disabled placeholder="" class = "input-data" type="text" name="" id="y2">
+                        </div>  
+
+                    </div>
+                </fieldset>
+            </div>
+        </section>
+ 
+        <div class="boton-alinear">
+            <a onclick="graficarSeno()" class="boton">Generar gráfica</a>
+        </div> 
+        
+        <section class="plot">
+            <div id="chart_div3" style="width: 800px; height:800px"></div>
+        </section>
+        
+        <section class="inputs">
+            <h2 class="head-2">Ejemplo de gráficas de funciones</h2>
+            <div class="var-entradas">
+                <fieldset>
+                    <legend>
+                        Función logarítmica
+                    </legend>
+                    <div class="datos">
+
+                        <div class="dato">
+                            <label for="">Escribe la base del logaritmo para la siguiente función: log<sub>base</sub>(x)</label>
+                            <input placeholder="base" class = "input-data" type="number" name="" id="base">
+                        </div>  
+                        <div class="dato">
+                            <label for="y3">Función a graficar:</label>
+                            <span id="y3" style="background-color: white;" class="input-data"></span>
+                        </div>  
+
+                    </div>
+                </fieldset>
+            </div>
+        </section>
+ 
+        <div class="boton-alinear">
+            <a onclick="graficarLogaritmo()" class="boton">Generar gráfica</a>
+        </div> 
+        
+        <section class="plot">
+            <div id="chart_div4" style="width: 800px; height:800px"></div>
+        </section>
+
+        <section class="inputs">
+            <h2 class="head-2">Ejemplo de gráficas de funciones</h2>
+            <div class="var-entradas">
+                <fieldset>
+                    <legend>
+                        Función coseno hiperbólico
+                    </legend>
+                    <div class="datos">
+
+                        <div class="dato">
+                            <label for="">Escribe el número por el que se multiplicará la x de la siguiente función: cosh(num*x)</label>
+                            <input placeholder="num" class = "input-data" type="number" name="" id="num2">
+                        </div>  
+                        <div class="dato">
+                            <label for="">Función a graficar:</label>
+                            <input style="background-color: white;" disabled placeholder="" class = "input-data" type="text" name="" id="y4">
+                        </div>  
+
+                    </div>
+                </fieldset>
+            </div>
+        </section>
+ 
+        <div class="boton-alinear">
+            <a onclick="graficarCosh()" class="boton">Generar gráfica</a>
+        </div> 
+        
+        <section class="plot">
+            <div id="chart_div5" style="width: 1000px; height:800px"></div>
+        </section>
+    </div>
+
+    </main>
+   
+    <script src="./circulo.js"></script>
+    <script src="./polinomio.js"></script>
+    <script src="./seno.js"></script>
+    <script src="./logaritmo.js"></script>
+    <script src="./cosh.js"></script>
+    <script src="./charts.js"></script>
+
+
+</body>
+
+</html>
