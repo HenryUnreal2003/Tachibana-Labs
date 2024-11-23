@@ -1,0 +1,26 @@
+*   {
+    box-sizing: border-box;
+    }
+    
+.wrapper{
+        border: 2px solid black;
+        border-radius: 5px;
+        background-color: cadetblue;
+}
+
+.wrapper > div{
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: cadetblue;
+    padding: 1em;
+    color: black;
+}
+
+.wrapper{
+    width: 500px;
+    display: flex;
+}
+
+.wrapper > div{
+    flex: 1 1 150px;
+}

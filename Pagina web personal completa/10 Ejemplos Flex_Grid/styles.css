@@ -1,0 +1,236 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #697565;
+  }
+
+  h1 {
+    text-align: center;
+    color: #000000;
+    margin: 20px 0;
+    font-size: 36px;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    text-align: center;
+    margin: 40px 0;
+  }
+  section {
+    margin: 30px;
+  }
+  .example-container {
+    margin-bottom: 50px;
+    background-color: white;
+    border: 2px solid #333;
+    padding: 20px;
+  }
+  .item {
+    background-color: lightgreen;
+    padding: 40px;
+    margin: 10px;
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 40px;
+  }
+
+    * {
+        box-sizing: border-box;
+    }
+    
+  .flex-wrap
+  {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: cadetblue;
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .flex-wrap > div
+  {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: cadetblue;
+    padding: 1em;
+    color: black;
+    flex: 1 1 150px;
+  }
+
+  .flex-flow-reverse
+  {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: cadetblue;
+    width: 500px;
+    display: flex;
+    flex-flow: wrap-reverse;
+  }
+
+  .flex-flow-reverse > div
+  {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: cadetblue;
+    padding: 1em;
+    color: black;
+    flex: 1 1 150px;
+  }
+
+  .flex-column
+  {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: cadetblue;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex-column > div
+  {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: cadetblue;
+    padding: 1em;
+    color: black;
+    flex: 1 1 150px;
+  }
+
+  .flex-row
+  {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: cadetblue;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .flex-row > div
+  {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: cadetblue;
+    padding: 1em;
+    color: black;
+    flex: 1 1 150px;
+  }
+
+  .flex-shrink
+  {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: cadetblue;
+    width: 500px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .flex-shrink > div
+  {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: cadetblue;
+    padding: 1em;
+    color: black;
+    flex: 1 1 150px;
+  }
+
+  .flex-basis
+  {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: cadetblue;
+    flex: 1 1 150px;
+  }
+
+  .flex-basis > div
+  {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: cadetblue;
+    padding: 1em;
+    color: black;
+    flex: 1 1 150px;
+  }
+
+  .align-stretch
+  {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: cadetblue;
+    display: flex;
+    height: 200px;
+    align-items: stretch;
+  }
+  
+  .align-stretch > div
+  {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: cadetblue;
+    padding: 1em;
+    color: black;
+    flex: 1 1 150px;
+  }
+
+  .space-between
+  {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: cadetblue;
+    display: flex;
+    height: 600px;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+
+  .space-between > div
+  {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: cadetblue;
+    padding: 1em;
+    color: black;
+  }
+
+  .perfect-centering
+  {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: cadetblue;
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .perfect-centering > div
+  {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: cadetblue;
+    padding: 1em;
+    color: black;
+  }
+
+  .flex-sencillo
+  {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: cadetblue;
+    display: flex;
+  }
+
+  .flex-sencillo > div
+  {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: cadetblue;
+    padding: 1em;
+    color: black;
+  }
